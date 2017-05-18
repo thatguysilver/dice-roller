@@ -32,3 +32,7 @@ def twenty_roll():
     a = str(random.randint(1,12))
     return render_template('layout.html', die_type = 'twenty-sided',
             num = a)
+
+if __name__ = "__main__":
+    port = int(os.environ.get("PORT', 33507"))
+    app.run(host='0.0.0.0', port=port)
