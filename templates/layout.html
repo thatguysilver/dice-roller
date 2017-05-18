@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<meta charset = 'utf-8'>
+	<meta name = 'viewport' content = 'width=device-width', initial-scale=1'>
+	<head>
+		<link rel='stylesheet' href=https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
+		<link rel='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'>
+		 <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet"> 
+		<style>
+#main {
+	background-color: #f7f9f7;
+	border-style: solid;
+	border-color: #000;
+	border-width: 2px;
+}
+body {
+	background-color: #bed6ca;
+	font-family: 'Permanent Marker';
+	text-align: center;
+}
+		</style>
+		<div class = 'container'>
+		<div class='container'>
+			<div id='main' class='jumbotron'>
+				<title>{{ die_type|title }}</title> {# the |title filter makes it in title-case #}
+				<h1>Rolling a {{ die_type|title }} die</h1>
+				<h3>You rolled: {{ num }}</h3>
+			</div>
+		</div>
+	</head>
+	<body>	
+	</body>
+</html>
+
