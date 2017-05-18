@@ -1,5 +1,5 @@
 from flask import Flask, render_template
-import random
+import random, os
 
 app = Flask(__name__)
 
