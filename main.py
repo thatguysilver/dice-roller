@@ -3,10 +3,16 @@ import random
 
 app = Flask(__name__)
 
-@app.route('/')
+@app.route('/six')
 def dice_roll():
     a = str(random.randint(1,6))
     return render_template('layout.html', die_type = "six-sided", 
+            num = a)
+
+@app.route('/eight')
+def eight_roll():
+    a = str(random.randint(1,8))
+    return render_template('layout.html', die_type = "eight-sided", 
             num = a)
 
 @app.route('/ten')
