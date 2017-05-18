@@ -26,3 +26,9 @@ def twelve_roll():
     a = str(random.randint(1,12))
     return render_template('layout.html', die_type = 'twelve-sided',
             num = a)
+
+@app.route('/twenty')
+def twenty_roll():
+    a = str(random.randint(1,12))
+    return render_template('layout.html', die_type = 'twenty-sided',
+            num = a)
