@@ -12,6 +12,9 @@
 	border-style: solid;
 	border-color: #000;
 	border-width: 2px;
+	text-align: center;
+	max-width: 700px;
+	margin: 0 auto;
 }
 body {
 	background-color: #bed6ca;
@@ -19,13 +22,15 @@ body {
 	text-align: center;
 }
 		</style>
-		<div class = 'container'>
-		<div class='container'>
-			<div id='main' class='jumbotron'>
-				<title>{{ die_type|title }}</title> {# the |title filter makes it in title-case #}
-				<h1>Rolling a {{ die_type|title }} die</h1>
-				<h3>You rolled: {{ num }}</h3>
+		<nav class = 'navbar navbar-default">
+			<div class = 'container-fluid' style = 'background-color: #f7f9f7; '>
+				<h3>Adam's Dice Roller App</h3>
 			</div>
+		</nav>
+		<div class='center-block ' id='main'>
+			<title>{{ die_type|title }}</title> {# the |title filter makes it in title-case #}
+			<h1>Rolling a {{ die_type|title }} die</h1>
+			<h3>You rolled: {{ num }}</h3>
 		</div>
 	</head>
 	<body>	
