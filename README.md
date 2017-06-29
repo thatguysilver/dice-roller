@@ -1,4 +1,3 @@
 # dice-roller
-Basic dice-rolling webapp in flask. Sort of a "hello world", I guess.
+Basic dice-rolling webapp written as a sort of "hello, world" in flask. Not intended as a portfolio project or anything like that, since the functions don't require any back-end whatsoever.
 
-To-do: actually roll the dice upon hitting a button instead of reloading the page. *Duhhh*.
